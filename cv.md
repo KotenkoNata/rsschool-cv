@@ -1,4 +1,4 @@
-![](/images/photo.png "Photo Kotenko Nataliia")
+![](/rsschool-cv/images/photo.png "Photo Kotenko Nataliia")
 
 # NATALIIA KOTENKO
 
