@@ -1,1 +1,0 @@
-https://KotenkoNata.github.io/rsschool-cv/cv
