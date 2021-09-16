@@ -206,8 +206,3 @@ footer{
 .github-link:hover svg, .github-link:focus svg{
   fill: #ff6b08;
 }
-
-.school-link:hover svg path{
-  fill: blue;
-}
-
