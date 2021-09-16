@@ -5,16 +5,12 @@
 }
 body {
   background-color: #f5f7fa;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  font-family: Montserrat;
+  padding: 20px 40px;
 
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  margin-top: 24px;
 }
 
 .wrapper {
@@ -28,15 +24,14 @@ body {
 .sidebar {
   background: #1e2939;
   width: 370px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0 40px 0;
 }
 
 .contacts-container {
-  margin-top: 60px;
-  margin-left: 55px;
-  margin-right: 40px;
+  margin: 60px 40px 0 40px;
+
 }
+
 .contacts-title {
   font-size: 22px;
   font-weight: 700;
@@ -44,6 +39,7 @@ body {
   color: #ffffff;
   margin-bottom: 20px;
 }
+
 .contacts-link {
   font-size: 14px;
   font-weight: 400;
@@ -52,20 +48,19 @@ body {
   text-decoration: none;
 }
 
-.contact-list li {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #ffffff;
-  margin-right: 10px;
+.contacts-link:hover, .contacts-link:focus{
+  color:#ff6b08;
+}
+
+.contact-list{
+  padding-left: 15px;
   list-style-type: none;
 }
 
 .skills-container {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 55px;
+  margin: 55px 40px 0 40px;
 }
+
 .skills-title {
   font-size: 22px;
   font-weight: 700;
@@ -75,9 +70,6 @@ body {
 }
 
 .skills-list li {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   margin-left: 15px;
   color: #ff6b08;
 }
@@ -87,10 +79,7 @@ body {
 }
 
 .about-me-container {
-  padding-left: 90px;
-  padding-right: 90px;
-  padding-bottom: 110px;
-  padding-top: 110px;
+  padding: 110px 90px;
 }
 
 .profession {
@@ -99,15 +88,14 @@ body {
   line-height: 24px;
   margin-bottom: 23px;
 }
+
 .name {
   font-size: 45px;
   font-weight: 700;
   line-height: 89px;
 }
+
 .description {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
   margin-top: 24px;
 }
 
@@ -117,6 +105,7 @@ body {
   line-height: 24px;
   margin-bottom: 10px;
 }
+
 .projects-link {
   color: #595959;
   font-size: 14px;
@@ -124,12 +113,15 @@ body {
   line-height: 24px;
   text-decoration: none;
 }
+
+.projects-link:hover, .projects-link:focus{
+  color: #ff6b08;
+}
+
 .tech-name {
   color: #595959;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
 }
+
 .project-name {
   color: #ff7920;
   font-weight: bold;
@@ -144,20 +136,22 @@ section {
   color: black;
 }
 
-pre {
-  color: #595959;
+.kata-link:hover, .kata-link:focus{
+  color: #ff6b08;
 }
 
 .profession-title {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 8px;
-  margin-bottom: 15px;
+
+  margin: 8px 0 15px 0;
 }
+
 .profession-company {
   color: #ff7920;
 }
+
 .profession-time {
   color: #a8a8a8;
   font-size: 12px;
@@ -165,6 +159,7 @@ pre {
   line-height: 24px;
   margin-bottom: 15px;
 }
+
 .divider {
   color: black;
 }
@@ -177,17 +172,16 @@ pre {
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 20px;
-  margin-top: 55px;
+
+  margin: 55px 0 20px 0;
 }
+
 .education-place {
   color: #ff6b08;
   margin-bottom: 15px;
 }
+
 .specialization {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
   margin-bottom: 15px;
 }
 
@@ -208,3 +202,12 @@ footer{
 .github-logo{
   fill:white;
 }
+
+.github-link:hover svg, .github-link:focus svg{
+  fill: #ff6b08;
+}
+
+.school-link:hover svg path{
+  fill: blue;
+}
+
