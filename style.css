@@ -5,8 +5,6 @@
 }
 body {
   background-color: #f5f7fa;
-  padding: 20px 40px;
-
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -22,171 +20,15 @@ body {
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
 
-.container{
-  max-width: 1180px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
+/*Aside styles*/
 
-.header{
-  position: fixed;
+.my-photo{
   width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
-}
-
-.header::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #1e2939;
-  z-index: 2;
-}
-
-.header-body{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  height: 80px;
-  align-items: center;
-}
-
-.header-logo{
-  flex: 0 0 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  z-index: 3;
-}
-
-.header-logo img{
-  max-width: 100%;
   display: block;
 }
 
-.header-list{
-  display: flex;
-  position: relative;
-  z-index: 2;
-}
-
-.header-list li{
-  list-style: none;
-  margin: 0 0 0 20px;
-}
-
-.header-link{
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 18px;
-  text-decoration: none;
-}
-
-@media (max-width:767px){
-  body.lock{
-    overflow: hidden;
-  }
-
-  .header-body{
-    height: 50px;
-  }
-
-  .header-logo{
-    flex: 0 0 30px;
-  }
-
-  .header-menu{
-    position: fixed;
-    top:-100%;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #e2e4e6;
-    padding: 90px 10px 20px 40px;
-    transition: all 0.3s ease 0s;
-    overflow: auto;
-  }
-
-  .header-menu.active{
-    top: 0;
-  }
-
-  .header-burger{
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    position: relative;
-    z-index: 3;
-  }
-
-  .header-burger span{
-    position: absolute;
-    background-color: white;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    top: 9px;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header-burger::before, .header-burger::after{
-    content: '';
-    background-color:white;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0;
-    transition: all 0.3s ease 0s;
-  }
-
-  .header-burger::before{
-    top: 0;
-  }
-
-  .header-burger::after{
-    bottom: 0;
-  }
-
-  .header-burger.active::before{
-    transform: rotate(45deg);
-    top: 9px;
-  }
-
-  .header-burger.active::after{
-    transform: rotate(-45deg);
-    bottom: 9px;
-  }
-
-  .header-burger.active span{
-    transform: scale(0);
-  }
-
-  .header-list{
-    display: block;
-  }
-
-  .header-list li{
-    margin: 0 0 20px 0;
-  }
-}
-
-
-
-.sidebar {
-  background: #1e2939;
-  width: 370px;
-  padding: 40px 0 40px 0;
-}
-
 .contacts-container {
-  margin: 60px 40px 0 40px;
-
+  margin: 60px 40px 0 30px;
 }
 
 .contacts-title {
@@ -195,6 +37,7 @@ body {
   line-height: 24px;
   color: #ffffff;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .contacts-link {
@@ -205,14 +48,25 @@ body {
   text-decoration: none;
 }
 
-.contacts-link:hover, .contacts-link:focus{
-  color:#ff6b08;
+.contacts-link svg{
+  fill: white;
+  margin-right: 10px;
+}
+
+.contact-list li a:hover, .contact-list li a:focus{
+  color: #ff6b08;
+}
+
+.contacts-link svg:hover, .contact-list li a svg:focus{
+  fill: #ff6b08;
 }
 
 .contact-list{
   padding-left: 15px;
   list-style-type: none;
+  padding: 0;
 }
+
 
 .skills-container {
   margin: 55px 40px 0 40px;
@@ -238,6 +92,8 @@ body {
 .about-me-container {
   padding: 110px 90px;
 }
+
+/*Main details*/
 
 .profession {
   font-size: 14px;
@@ -342,10 +198,13 @@ section {
   margin-bottom: 15px;
 }
 
+
+/*Footer*/
+
 footer{
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom:0;
   width: 100%;
 
   padding-left: 55px;
@@ -363,3 +222,282 @@ footer{
 .github-link:hover svg, .github-link:focus svg{
   fill: #ff6b08;
 }
+
+
+/*Styles for desktop*/
+
+@media screen and (min-width:1200px){
+  .wrapper{
+    display: none;
+  }
+  .tech-skills-tablet-container{
+    display: none;
+  }
+
+  .sidebar {
+    background: #1e2939;
+    min-width: 370px;
+    padding: 40px 0 40px 0;
+  }
+}
+
+/*Styles for tablet*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+
+  .wrapper{
+    display: none;
+  }
+
+  .tech-skills-tablet-container{
+    display: none;
+  }
+
+  .sidebar {
+    background: #1e2939;
+    min-width: 300px;
+    padding: 40px 0 40px 0;
+  }
+
+  .name{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 66px;
+  }
+  .about-me-container {
+    padding: 70px 50px;
+  }
+
+  .code{
+    width: 100%;
+  }
+}
+
+/*Styles for phone*/
+
+
+
+
+@media screen and (min-width: 320px) and (max-width: 440px){
+  .code{
+    max-width: 220px;
+    border: 1px sold green;
+  }
+
+  .header-body{
+    height: 50px;
+  }
+}
+
+
+@media screen and (max-width: 767px){
+  .sidebar{
+    display: none;
+  }
+
+  .code{
+    width: 100%;
+  }
+  
+
+  .about-me-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .skills-title, .contacts-title{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+
+  .name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  
+  section{
+    margin-bottom: 40px;
+  }
+
+  .about-me-container {
+    padding: 90px 30px 60px 30px;
+  }
+
+  .container{
+    max-width: 767px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  
+  .header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2939;
+    z-index: 2;
+  }
+  
+  .header-body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+  }
+  
+  .header-logo{
+    flex: 0 0 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .header-logo img{
+    max-width: 100%;
+    display: block;
+  }
+  
+  .header-list{
+    display: block;
+    position: relative;
+  }
+  
+  .header-list li{
+    color: #ff6b08;
+    margin: 0 0 10px 0;
+  }
+  
+  .header-link{
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+
+  body.lock{
+    overflow: hidden;
+  }
+
+  .header-menu{
+    position: fixed;
+    top:-100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1e2939;
+    padding: 90px 10px 20px 85px;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
+  }
+
+  .header-menu.active{
+    top: 0;
+  }
+
+  .header-burger{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .header-burger span{
+    position: absolute;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-burger::before, .header-burger::after{
+    content: '';
+    background-color:white;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-burger::before{
+    top: 0;
+  }
+
+  .header-burger::after{
+    bottom: 0;
+  }
+
+  .header-burger.active::before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header-burger.active::after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header-burger.active span{
+    transform: scale(0);
+  }
+
+  .skills-list li span{
+    color: black;
+  }
+
+  .contact-list{
+    padding: 0;
+  }
+
+  .contact-list li a{
+    color: black;
+    display: block;
+  }
+
+  .contact-list li a::hover, .contact-list li a::focus{
+    color: #ff6b08;
+  }
+
+  .contact-list li a span::hover, .contact-list li a span::focus{
+    fill: #ff6b08;
+  }
+
+
+  .contacts-link svg{
+    fill: #ff6b08;
+    margin-right: 8px;
+  }
+
+  footer{
+    background-color: #1e2939;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    align-items: center;
+  }
+}
+

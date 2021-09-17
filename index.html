@@ -18,12 +18,12 @@
   </head>
   <body>
 
-   <div class="wrapper" data-modal>
+   <div class="wrapper">
     <header class="header">
       <div class="container">
         <div class="header-body">
           <a href="#" class="header-logo">
-            <img src="images/photo.png" alt="Kotenko Nataliia">
+            <img src="images/avatar.png" alt="Kotenko Nataliia">
           </a>
 
           <div class="header-burger">
@@ -32,54 +32,92 @@
           <nav class="header-menu">
             <ul class="header-list">
               <li>
-                <a href="#" class="header-link">Project experience</a>
+                <a href="#project-experience" class="header-link">Project experience</a>
               </li>
               <li>
-                <a href="#" class="header-link">Code example</a>
+                <a href="#code-example" class="header-link">Code example</a>
               </li>
               <li>
-                <a href="#" class="header-link">Work experience</a>
+                <a href="#work-experience" class="header-link">Work experience</a>
+              </li>
+              <li>
+                <a href="#education" class="header-link">Education</a>
+              </li>
+              <li>
+                <a href="#additional-education" class="header-link">Additional education</a>
+              </li>
+              <li>
+                <a href="#tech-skills" class="header-link">Tech Skills</a>
+              </li>
+              <li>
+                <a href="#soft-skills" class="header-link">Soft Skills</a>
+              </li>
+              <li>
+                <a href="#languages" class="header-link">Languages</a>
+              </li>
+              <li>
+                <a href="#contacts" class="header-link">Contacts</a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-
-      
     </header>
    </div>
+
+
     <div class="main-wrapper">
       <aside class="sidebar">
-        <img
+        <div class="photo-container">
+          <img
           class="my-photo"
           src="./images/photo.png"
           alt="Photo Kotenko Nataliia"
           width="370"
         />
+        </div>
 
         <div class="contacts-container">
           <h3 class="contacts-title">Contacts</h3>
           <ul class="contact-list">
             <li>
               <a class="contacts-link" href="tel:+380634461803"
-                >+38(063) 446-1803</a
+                >
+                <svg class="icon-smartphone" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-smartphone" />
+                </svg>
+                +38(063) 446-1803</a
               >
             </li>
             <li>
               <a class="contacts-link" href="mailto:kotenkonata8@gmail.com"
-                >Email</a
+                >
+                <svg class="icon-envelope" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-envelope" />
+                </svg>
+                Email</a
               >
             </li>
             <li>
               <a
                 class="contacts-link"
                 href="https://www.linkedin.com/in/natalia-kotenko-538219a4/"
-                >Linkedin</a
+                target="_blank"
+                >
+                <svg class="icon-linkedin-copy" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-copy" />
+                </svg>
+                Linkedin</a
               >
             </li>
             <li>
               <a class="contacts-link" href="https://github.com/KotenkoNata"
-                >Github</a
+              target="_blank"
+                >
+                <svg class="icon-github-icon-octocat" width="12" height="12">
+                  <use href="./images/symbol-defs.svg#icon-github-icon-octocat" />
+                </svg>
+                Github</a
               >
             </li>
           </ul>
@@ -157,7 +195,7 @@
           </p>
         </section>
 
-        <section>
+        <section id="project-experience">
           <h3 class="about-me-title">Project experience</h3>
 
           <p>
@@ -165,6 +203,7 @@
             <a
               class="projects-link"
               href="https://projectteam18.github.io/parcel-project-template/"
+              target="_blank"
               >Link</a
             >
             <b>[</b> <span class="tech-name">HTML, SASS, JS, Parcel</span>
@@ -178,6 +217,7 @@
             <a
               class="projects-link"
               href="https://dmytro-kostiuk.github.io/Filmoteka/"
+              target="_blank"
               >Link</a
             >
             <b>[</b>
@@ -189,7 +229,7 @@
           <p>Application for choosing a movie. Role: Scrum Master.</p>
         </section>
 
-        <section>
+        <section id="code-example">
           <h3 class="about-me-title">Code example</h3>
         <p>
           Kata
@@ -197,19 +237,20 @@
             ><a
               class="kata-link"
               href="https://www.codewars.com/kata/52fba66badcd10859f00097e"
+              target="_blank"
               >Disemvowel Trolls</a
             ></b
           >
           from CodeWars.
         </p>
         <p>JavaScript:</p>
-        <pre>
+        <pre class="code">
           <code class="base16/solarized-light">function disemvowel(str) {
   return str.replace(/[aeiouAEIOU]/g, "");
 }</code></pre>
         </section>
 
-        <section>
+        <section id="work-experience">
           <h3 class="about-me-title">Work experience</h3>
 
           <h4 class="profession-title">
@@ -227,7 +268,7 @@
           </span>
         </section>
 
-        <section>
+        <section id="education">
           <h3 class="about-me-title">Education</h3>
           <div>
             <h4 class="education-place">National Mining University</h4>
@@ -242,7 +283,7 @@
           </div>
         </section>
 
-        <section>
+        <section id="additional-education">
           <h3 class="about-me-title">Additional education</h3>
           <div class="additional-education-details-container">
             <h4 class="education-place">IT School GoIT (Kyiv)</h4>
@@ -274,16 +315,134 @@
             </span>
           </div>
         </section>
+
+        <div class="tech-skills-tablet-container">
+          <section id="tech-skills">
+            <div>
+              <h3 class="about-me-title">Tech Skills</h3>
+              <ul class="skills-list">
+                <li>
+                  <span>HTML5/CSS3/SASS</span>
+                </li>
+                <li>
+                  <span>Responsive/Adaptive design GIT</span>
+                </li>
+                <li>
+                  <span>JavaScript</span>
+                </li>
+                <li>
+                  <span>React</span>
+                </li>
+                <li>
+                  <span>Redux</span>
+                </li>
+                <li>
+                  <span>REST API</span>
+                </li>
+                <li>
+                  <span>Handlebars</span>
+                </li>
+                <li>
+                  <span>Webpack</span>
+                </li>
+                <li>
+                  <span>Parcel</span>
+                </li>
+                <li>
+                  <span>Node.js</span>
+                </li>
+                <li>
+                  <span>MongoDB</span>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section id="soft-skills">
+            <div>
+              <h3 class="about-me-title">Soft Skills</h3>
+              <ul class="skills-list">
+                <li><span>Growth Mindset</span></li>
+                <li><span>Teamwork</span></li>
+                <li><span>Creativity</span></li>
+                <li><span>Good communication</span></li>
+              </ul>
+            </div>
+          </section>
+  
+          <section id="languages">
+            <div>
+              <h3 class="about-me-title">Languages</h3>
+              <ul class="skills-list">
+                <li><span>Ukrainian - Native</span></li>
+                <li><span>Russian - Native</span></li>
+                <li><span>English - Pre-Intermediate</span></li>
+              </ul>
+            </div>
+          </section>
+  
+          <section id="contacts">
+            <div>
+              <h3 class="about-me-title">Contacts</h3>
+              <ul class="contact-list">
+                <li>
+                  <a class="contacts-link" href="tel:+380634461803"
+                    >
+                    <svg class="icon-smartphone" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-smartphone" />
+                    </svg>
+                    +38(063) 446-1803</a
+                  >
+                </li>
+                <li>
+                  <a class="contacts-link" href="mailto:kotenkonata8@gmail.com"
+                    >
+                    <svg class="icon-envelope" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-envelope" />
+                    </svg>
+                    Email</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="contacts-link"
+                    href="https://www.linkedin.com/in/natalia-kotenko-538219a4/"
+                    target="_blank"
+                    >
+                    <svg class="icon-linkedin-copy" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-linkedin-copy" />
+                    </svg>
+                    Linkedin</a
+                  >
+                </li>
+                <li>
+                  <a class="contacts-link" href="https://github.com/KotenkoNata"
+                  target="_blank"
+                    >
+                    <svg class="icon-github-icon-octocat" width="12" height="12">
+                      <use href="./images/symbol-defs.svg#icon-github-icon-octocat" />
+                    </svg>
+                    Github</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
       </div>
 
+      
+
       <footer>
-        <a class="github-link" href="https://github.com/KotenkoNata">
+        <a class="github-link" href="https://github.com/KotenkoNata"
+        target="_blank">
           <svg class="github-logo" width="50" height="50">
             <use href="./images/symbol-defs.svg#icon-github" />
           </svg>
         </a>
         <p>© 2021</p>
-        <a class="school-link" href="https://rs.school/js/">
+        <a class="school-link" href="https://rs.school/js/"
+        target="_blank">
           <svg width="50" height="50">
             <use href="./images/symbol-defs.svg#icon-rs_school_js" />
           </svg>
