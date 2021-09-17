@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
     <title>CV Kotenko Nataliia</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -16,7 +17,38 @@
 <script>hljs.highlightAll();</script>
   </head>
   <body>
-    <div class="wrapper">
+
+   <div class="wrapper" data-modal>
+    <header class="header">
+      <div class="container">
+        <div class="header-body">
+          <a href="#" class="header-logo">
+            <img src="images/photo.png" alt="Kotenko Nataliia">
+          </a>
+
+          <div class="header-burger">
+            <span></span>
+          </div>
+          <nav class="header-menu">
+            <ul class="header-list">
+              <li>
+                <a href="#" class="header-link">Project experience</a>
+              </li>
+              <li>
+                <a href="#" class="header-link">Code example</a>
+              </li>
+              <li>
+                <a href="#" class="header-link">Work experience</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      
+    </header>
+   </div>
+    <div class="main-wrapper">
       <aside class="sidebar">
         <img
           class="my-photo"
@@ -258,5 +290,6 @@
         </a>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
