@@ -2,6 +2,7 @@
   const refs = {
     openModalBtn: document.querySelector(".header-burger"),
     menu: document.querySelector(".header-menu"),
+    menuItems: document.querySelectorAll(".header-menu li"),
     body: document.querySelector('body'),
   };
 
@@ -12,5 +13,8 @@
   }
 
   refs.openModalBtn.addEventListener("click", toggleModal);
+  refs.menuItems.forEach(el => {
+    el.addEventListener('click', toggleModal)
+  })
 
 })();
