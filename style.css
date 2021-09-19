@@ -55,9 +55,10 @@ body {
 
 .contact-list li a:hover, .contact-list li a:focus{
   color: #ff6b08;
+  fill:#ff6b08;
 }
 
-.contacts-link svg:hover, .contact-list li a svg:focus{
+.contact-list li a svg:hover, .contact-list li a svg:focus{
   fill: #ff6b08;
 }
 
